@@ -29,6 +29,8 @@ Partial Class EntityHandler
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         CType(Me.EntityHandlerHeaderLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
@@ -87,6 +89,8 @@ Partial Class EntityHandler
         '
         Me.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 322)
         Me.GroupBox1.Name = "GroupBox1"
@@ -95,10 +99,29 @@ Partial Class EntityHandler
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mob Builder"
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(7, 84)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(469, 32)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Base Entity: (This is what the AI runs off of)"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Area Effect Cloud", "Armor Stand", "Arrow", "Axolotl", "Bat", "Bee", "Blaze", "Boat", "Cat", "Cave Spider", "Minecart with Chest", "Chicken", "Cod", "Minecart with Command Block", "Cow", "Creeper", "Dolphin", "Donkey", "Dragon Fireball", "Drowned", "Egg", "Elder Guardian", "End Crystal", "Ender Dragon", "Ender Pearl", "Enderman", "Endermite", "Evoker", "Evoker Fangs", "Thrown Experience Bottle", "Experience Orb", "Eye of Ender", "Falling Block", "Fireball", "Firework Rocket", "Fox", "Minecart with Furnace", "Ghast", "Giant", "Glow Item Frame", "Glow Squid", "Goat", "Guardian", "Hogin", "Minecart with Hopper", "Horse", "Husk", "Illusioner", "Iron Golem", "Item", "Item Frame", "Lead", "Lightning Bolt", "Llama", "Llama Spit", "Magma Cube", "Marker", "Minecart", "Mooshroom", "Mule", "Ocelot", "Painting", "Panda", "Parrot", "Phantom", "Pig", "Piglin", "Piglin Brute", "Pillager", "Polar Bear", "Thrown Potion", "Pufferfish", "Rabbit", "Ravager", "Salmon", "Sheep", "Shulker", "Shulker Bullet", "Siverfish", "Skeleton", "Skeleton Horse", "Slime", "Small Fireball", "Snow Golem", "Snowball", "Minecart with Spawner", "Spectral Arrow", "Spider", "Squid", "Stray", "Strider", "TNT", "Minecart with TNT", "Trader Llama", "Trident", "Tropical Fish", "Turtle", "Vex", "Villager", "Vindicator", "Wandering Trader", "Witch", "Wither", "Wither Skeleton", "Wither Skull", "Wolf", "Zoglin", "Zombie", "Zombie Horse", "Zombie Villager", "Zombified Piglin"})
+        Me.ComboBox1.Location = New System.Drawing.Point(6, 119)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(232, 40)
+        Me.ComboBox1.TabIndex = 1
+        '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(7, 39)
+        Me.TextBox1.Location = New System.Drawing.Point(7, 38)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.PlaceholderText = "Custom Entity Name (No Spaces Please)"
         Me.TextBox1.Size = New System.Drawing.Size(1078, 39)
         Me.TextBox1.TabIndex = 0
         '
@@ -133,4 +156,6 @@ Partial Class EntityHandler
     Friend WithEvents Label2 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents ComboBox1 As ComboBox
 End Class
