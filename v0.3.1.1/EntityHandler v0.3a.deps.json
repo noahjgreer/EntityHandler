@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "EntityHandler v0.3a/1.0.0": {
+        "runtime": {
+          "EntityHandler v0.3a.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EntityHandler v0.3a/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
